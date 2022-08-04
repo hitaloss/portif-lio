@@ -1,9 +1,10 @@
-import { styled } from "@/styles/stitches.config"
-import { Flex } from "@/styles/Global"
+import { styled } from "@/styles/stitches.config";
+import { Flex } from "@/styles/Global";
 import { Text } from "@/styles/Text";
 
 export const ProjectStack = styled(Flex, {
   margin: "1.25rem 0 1.25rem 0",
+  transition: "300ms ease-in-out",
 });
 
 export const ProjectStackTech = styled("span", {
@@ -11,10 +12,12 @@ export const ProjectStackTech = styled("span", {
   color: "$grey2",
   padding: "0  0.5rem",
   borderRadius: "$2",
+  transition: "300ms ease-in-out",
 });
 
 export const ProjectLinks = styled(Flex, {
   marginTop: "2.25rem",
+  transition: "300ms ease-in-out",
 });
 
 export const ProjectLink = styled("a", {
@@ -25,18 +28,19 @@ export const ProjectLink = styled("a", {
   display: "flex",
   alignItems: "center",
   lineHeight: "0",
+  transition: "300ms ease-in-out",
 
-  "&:hover":{
-    color: "$grey5"
+  "&:hover": {
+    color: "$grey5",
+    transition: "300ms ease-in-out",
   },
 
   [`& svg`]: {
-    marginRight: "$1"
-  }
+    marginRight: "$1",
+  },
 });
 
-export const ProjectTitle = styled(Text, {
-})
+export const ProjectTitle = styled(Text, {});
 
 export const Project = styled("article", {
   marginTop: "4rem",
@@ -54,9 +58,8 @@ export const Project = styled("article", {
         backgroundColor: "$brand2",
         padding: "0 8px",
         borderRadius: "$1",
-        fontSize: "$text2"
-      }
-      
-    }
-  }
+        fontSize: "$text2",
+      },
+    },
+  },
 });

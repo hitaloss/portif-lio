@@ -69,11 +69,17 @@ export const Project = (): JSX.Element => {
           </ProjectStack>
 
           <Text type="body1" color="grey2">
-            {repository.description.substring(0, 129)}
+            {repository.description?.substring(0, 129)}
           </Text>
           <ProjectLinks>
-            <ProjectLink target="_blank" href={repository.git_url}>
-              <FaGithub /> Github Code
+            <ProjectLink
+              target="_blank"
+              href={
+                "https://www." +
+                repository.git_url.substring(6, repository.git_url.length)
+              }
+            >
+              <FaGithub /> Código no Github
             </ProjectLink>
             {repository.homepage && (
               <ProjectLink target="_blank" href={repository.homepage}>

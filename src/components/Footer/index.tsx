@@ -21,22 +21,37 @@ export const Footer = (): JSX.Element => {
           />
           <Box css={{ marginLeft: "$2" }}>
             <Text type="heading4" color="grey5" css={{ marginBottom: "$2" }}>
-              Thank you!{" "}
-             <HandEffect />
+              Obrigado pela visita! <HandEffect />
             </Text>
             <Text type="body1" color="grey2">
-              Follow me on my social networks and let's talk
+              Sinta-se livre para me seguir nas minhas redes sociais!
             </Text>
           </Box>
         </Flex>
         <Flex>
-          <Button className="instagram" type="circle" as="a" target="_blank" href={`https://instagram.com/${userData.instagramUser}`}>
+          <Button
+            className="instagram"
+            type="circle"
+            as="a"
+            style={{
+              transition: "300ms ease-in-out",
+            }}
+            target="_blank"
+            href={`https://instagram.com/${userData.instagramUser}`}
+          >
             <FaInstagram />
           </Button>
-          <Button className="facebook" type="circle" as="a" target="_blank" href={`https://fb.com/${userData.facebookUser}`}>
-            <FaFacebookF />
-          </Button>
-          <Button className="linkedin" type="circle" as="a" target="_blank" href={`https://linkedin.com/in/${userData.linkedinUser}`}>
+
+          <Button
+            className="linkedin"
+            type="circle"
+            as="a"
+            style={{
+              transition: "300ms ease-in-out",
+            }}
+            target="_blank"
+            href={`https://linkedin.com/in/${userData.linkedinUser}`}
+          >
             <FaLinkedinIn />
           </Button>
         </Flex>

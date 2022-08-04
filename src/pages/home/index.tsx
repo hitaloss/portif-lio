@@ -43,33 +43,40 @@ export const Home = (): JSX.Element => {
                 height={"48px"}
               />
               <Text color="grey4" css={{ marginLeft: "$2" }}>
-                Hello, my name is {userData.nameUser} <HandEffect />
+                Olá, meu nome é {userData.nameUser} <HandEffect />
               </Text>
             </Flex>
             <Text as="h1" type="heading1" color="grey5">
-              I{" "}
+              É um{" "}
               <Text as="span" type="heading1" color="brand1">
-                love
+                prazer
               </Text>{" "}
-              creating and{" "}
+              criar e{" "}
               <Text as="span" type="heading1" color="brand1">
-                developing
+                desenvolver
               </Text>{" "}
-              projects
+              projetos
             </Text>
             <Text type="body1" color="grey2">
-              Discover here in this environment, created especially for you, all
-              my projects and technologies
+              Descubra aqui, criado especificamente para você, todos os meus
+              projetos e tecnologias
             </Text>
             <HeaderButtonsArea>
-              <Button as="a" type="primary" href="#projects">
-                See Projects
+              <Button
+                as="a"
+                style={{
+                  transition: "300ms ease-in-out",
+                }}
+                type="primary"
+                href="#projects"
+              >
+                Ver projetos
               </Button>
               <Button
                 as="a"
                 type="circle"
                 target="_blank"
-                href={userData.githubUser}
+                href={"https://github.com/hitaloss"}
               >
                 <FaGithub />
               </Button>
@@ -87,10 +94,10 @@ export const Home = (): JSX.Element => {
           <ProjectAreaWrapperColumns>
             <ProjectsAreaSocialMediaMessage>
               <Text as="h2" type="heading4" color="grey4">
-                My projects
+                Meus Projetos
               </Text>
               <Text as="p" type="body1" color="grey2">
-                Projects created at{" "}
+                Projetos criados na{" "}
                 <Text as="span" color="brand5">
                   Kenzie Academy
                 </Text>
