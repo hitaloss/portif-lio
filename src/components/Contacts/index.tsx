@@ -86,7 +86,7 @@ export const Contacts = () => {
                   }}
                   type="body2"
                   target="_blank"
-                  href={`mailto:hitalo.2014.hs@gmail.com`}
+                  href={`https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=hitalo.2014.hs@gmail.com&subject=Solicita%C3%A7%C3%A3o+de+contato&body=Ol%C3%A1,%0A%0A+Estou+entrando+em+contato+afim+de+saber+um+pouco+mais+sobre+voc%C3%AA.+%0A%0APor+favor+retorne+este+email+assim+que+puder,+obrigado!+%0A%0ACaso+este+retorno+demore,+tentarei+entrar+em+contato+em+outro+momento.%0A%0A%0AAtenciosamente,%20%0A%0A%0A%0A`}
                 >
                   Enviar Email agora
                 </Text>
