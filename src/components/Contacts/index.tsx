@@ -86,7 +86,7 @@ export const Contacts = () => {
                   }}
                   type="body2"
                   target="_blank"
-                  href={`mailto=${userData.emailUser}`}
+                  href={`mailto:hitalo.2014.hs@gmail.com`}
                 >
                   Enviar Email agora
                 </Text>
@@ -112,7 +112,7 @@ export const Contacts = () => {
                   }}
                   type="body2"
                   target="_blank"
-                  href={userData.linkedinUser}
+                  href={"https://www.linkedin.com/in/hitalosantossilva/"}
                 >
                   Ir para o LinkedIn
                 </Text>
